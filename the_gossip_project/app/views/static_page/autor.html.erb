@@ -1,0 +1,20 @@
+<header>
+<span class="border border-danger" >
+<a href="<%=static_page_path%>"> HOME </a>
+</span>
+<span class="border border-danger">
+<a href="<%=static_page_team_path %>"> TEAM </a>
+</span>
+<span class="border border-danger">
+<a href="<%=  static_page_contact_path %>"> CONTACT </a>
+</span>
+</header>
+
+
+<h4 style="text-align: center;">Simple biographie sur notre auteur  </h4>
+
+<p style="text-decoration: underline;"> Nom de l'auteur: <%=@use.last_name%> <br>
+	Prénom de l'auteur: <%=@use.first_name%>  <br>
+   Age actuel: <%=@use.age%> ans <br>
+   Sa description: <%=@use.description%>
+</p>

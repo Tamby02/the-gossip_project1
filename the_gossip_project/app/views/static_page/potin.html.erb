@@ -1,0 +1,27 @@
+<header>
+<span class="border border-danger" >
+<a href="<%=static_page_path%>"> HOME </a>
+</span>
+<span class="border border-danger">
+<a href="<%=static_page_team_path %>"> TEAM </a>
+</span>
+<span class="border border-danger">
+<a href="<%=  static_page_contact_path %>"> CONTACT </a>
+</span>
+</header>
+
+
+
+<h1> TITRE: <%=@potin.title%> </h1>
+<h2 style="margin-left:200px">Contenu du potin:
+</h2>
+<p><%=@potin.content%></p>
+
+<%@gossip.each do |i|%>
+<a href="/autor/<%=i.user_id%>" style="margin-left: 800px; color:rgb(116, 99, 71); font-size: 25px"><%end%> auteur: <%=@potin.user.last_name%>
+<%=@potin.user.first_name%></a>
+
+
+
+
+

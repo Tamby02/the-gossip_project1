@@ -1,0 +1,30 @@
+
+<header>
+<span class="border border-danger" >
+<a href="<%=static_page_path%>"> HOME </a>
+</span>
+<span class="border border-danger">
+<a href="<%=static_page_team_path %>"> TEAM </a>
+</span>
+<span class="border border-danger">
+<a href="<%=  static_page_contact_path %>"> CONTACT </a>
+</span>
+</header>
+
+
+<h1>
+	BIENVENU 😇 , tout va bien?
+</h1>
+
+<p> Voici les listes des potins:</br>
+	<%@gossip.each do |i|%> 
+	Titre: <a href ="<%=i.id%>"><%=i.title%></a></br>
+	auteur: <%=i.user.first_name%>
+	
+	</br>
+	</br>
+	<%end%> 
+</p>
+
+
+
